@@ -21,15 +21,32 @@ Para el programa "PF_Portal", es necesario ingresar archivos DICOM de imagenes d
 Posteriormente, corra el programa con "RUN".
 
 
-Para el programa "PF_Peli", es necesario ingresar imagenes JPG. Las condiciones de irradiación que recomendamos es: al menos 500 UM por cada franja, 600 UM/min, haz de 6X, una geometría de SSD=100 cm, colocando placas de 5cm por debajo y 1.5cm por encima de la película. Colocar 4 marcas de referencia en la película  Escanear la imagen en un archivo .jpg, 300 dpi, 48 bits de profunidad, En las siguientes líneas ingrese el nombre del archivo. No olvide agregar la terminación ".dcm". 
+Para el programa "PF_Peli", es necesario ingresar imagenes JPG. Las condiciones de irradiación que recomendamos es: al menos 500 UM por cada franja, 600 UM/min, haz de 6X, una geometría de SSD=100 cm, colocando placas de 5cm por debajo y 1.5cm por encima de la película. Colocar 4 marcas de referencia en la película con ayuda del crosshair.  Escanear la pelicula en modo reflexión con los siguientes parámetros: archivo .jpg, 300 dpi, 48 bits de profunidad, En las siguientes líneas ingrese el nombre del archivo. No olvide agregar la terminación ".jpg". 
 
    
-     %% Abrimos la imagen
-     im = dicomread("PF_Varian.dcm"); %Aquí leemos la imagen DICOM 
-     info=dicominfo('PF_Varian.dcm'); %En caso que se use, extraer datos del DICOM para generar un PDF
-     I = dicomread(info); 
-     %imshow(im)
+       % Apertura de la imagen y ajuste de constraste
+        im=rgb2gray(imread('bk_300006.jpg'));
+        imc=imread('bk_300006.jpg');
 
 Posteriormente, corra el programa con "RUN".
 
+En este programa, el usuario deberá seleccionar las marcas de plumon puestas en la película con el fin de centrar la imagen para obtener los perfiles. Siga las instrucciones que menciona en cada ventana que se desplegue. 
 
+ # Resultados
+En ambos programas, al terminar las iteraciones, le generará el conjunto de resultados que pide el concurso y un mensaje para ingresar el nombre del PDF con los resultados adecuados, no olvide agregar la terminación ".pdf". 
+
+code-block:: bash
+
+     La hoja 23 del banco izquierdo en la franja 7 tiene la maxima desviación siendo de 1.1627 mm respecto a la 
+     tolerancia de 1 mm.
+     En la prueba que consto de 10 franjas, hubo un total de 58 hojas desviadas, siendo la desviación media de: 
+     0.30482 mm respecto a la tolerancia de 1 mm
+     Hay 19 pares de hojas desviadas y el par de hojas con maxima desviación es el 23 en la franja 7 con desviación 
+     de 1.5036
+     Ingrese el nombre con que se exportara el reporte (no olvide colocar al final <.pdf>): prueba.pdf
+
+
+Los programas generá 3 archivos pdf:
+-"prueba" son los resultados necesarios que pide la convocatoria
+-"extra1" son las hojas que presentan desviaciones mayores a la tolerancia
+-"extra2" es el setup de donde se originaron los perfiles para el análisis
