@@ -35,7 +35,6 @@ En este programa, el usuario deberá seleccionar las marcas de plumon puestas en
  # Resultados
 En ambos programas, al terminar las iteraciones, le generará el conjunto de resultados que pide el concurso y un mensaje para ingresar el nombre del PDF con los resultados adecuados, no olvide agregar la terminación ".pdf". 
 
-code-block:: bash
 
      La hoja 23 del banco izquierdo en la franja 7 tiene la maxima desviación siendo de 1.1627 mm respecto a la 
      tolerancia de 1 mm.
@@ -53,6 +52,12 @@ Los programas generá 3 archivos pdf:
 -"extra1" son las hojas que presentan las posiciones y las hojas desviaciones mayores a la tolerancia
 
 -"extra2" son las  hojas que presentan las hojas con desviaciones mayores a la tolerancia
+
+Además, el código genera una imagen JPG llamado "Setup", donde se pueden observar los perfiles que fueron tomados para su evaluación (franjas y hojas).
+
+# Notas
+Para probar el código "PF_Portal", utilice el archivo "PF_Varian".
+Para probar el código "PF_Peli", utilice el archivo "bk_300006".
 
 # Discusión
 Cualquier duda, anexamos nuestros correos:
