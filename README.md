@@ -50,9 +50,9 @@ Los programas generá 3 archivos pdf:
 
 -"prueba" son los resultados necesarios que pide la convocatoria
 
--"extra1" son las hojas que presentan desviaciones mayores a la tolerancia
+-"extra1" son las hojas que presentan las posiciones y las hojas desviaciones mayores a la tolerancia
 
--"extra2" son las  hojas que presentan desviaciones mayores a la tolerancia
+-"extra2" son las  hojas que presentan las hojas con desviaciones mayores a la tolerancia
 
 # Discusión
 Cualquier duda, anexamos nuestros correos:
