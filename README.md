@@ -59,4 +59,4 @@ Cualquier duda, anexamos nuestros correos:
 
 -<alvarodan.crco@ciencias.unam.mx>
 
--<luisgtz1796Q@gmail.com>
+-<luisgtz1796@gmail.com>
