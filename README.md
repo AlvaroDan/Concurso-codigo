@@ -47,6 +47,9 @@ code-block:: bash
 
 
 Los programas generá 3 archivos pdf:
+
 -"prueba" son los resultados necesarios que pide la convocatoria
+
 -"extra1" son las hojas que presentan desviaciones mayores a la tolerancia
+
 -"extra2" es el setup de donde se originaron los perfiles para el análisis
