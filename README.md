@@ -52,4 +52,11 @@ Los programas generá 3 archivos pdf:
 
 -"extra1" son las hojas que presentan desviaciones mayores a la tolerancia
 
--"extra2" es el setup de donde se originaron los perfiles para el análisis
+-"extra2" son las  hojas que presentan desviaciones mayores a la tolerancia
+
+# Discusión
+Cualquier duda, anexamos nuestros correos:
+
+-<alvarodan.crco@ciencias.unam.mx>
+
+-<luisgtz1796Q@gmail.com>
